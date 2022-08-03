@@ -13,8 +13,8 @@ public enum Box {
     NUM8,
     BOMB,
     OPENED,
-    CLOSET,
-    FLAGET,
+    CLOSED,
+    FLAGED,
     BOMBED,
     NOBOMB;
 

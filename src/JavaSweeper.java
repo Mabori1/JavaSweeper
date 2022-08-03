@@ -5,13 +5,15 @@ import sweeper.Box;
 
 public class JavaSweeper extends JFrame {
 
+    private JPanel panel;
     private final int COWS = 15;
     private final int ROWS = 1;
     private final int IMAGE_SIZE = 50;
 
 
+
     public static void main(String[] args) {
-        new JavaSweeper();
+       new JavaSweeper();
     }
 
     private JavaSweeper() {
@@ -21,12 +23,12 @@ public class JavaSweeper extends JFrame {
     }
 
     private void initPanel() {
-        JPanel panel = new JPanel(){
+         panel = new JPanel(){
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
 
-                //g.drawImage(getImage("bomb"),0,0,this);
+              // g.drawImage(getImage(Box.NUM5.name().toLowerCase()),0,0,this);
                 //g.drawImage(getImage("nobomb"),IMAGE_SIZE,0,this);
 
                 for (Box box : Box.values())
@@ -40,6 +42,7 @@ public class JavaSweeper extends JFrame {
     }
 
     private void initframe() {
+
         pack();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Java Sweeper");
@@ -52,9 +55,15 @@ public class JavaSweeper extends JFrame {
         for (Box box : Box.values()) box.image = getImage(box.name().toLowerCase());
     }
 
-    private Image getImage(String name){
+    private Image getImage(String name) {
         String filename = "img/" + name + ".png";
-        ImageIcon icon = new ImageIcon(getClass().getResource(filename));
+        ImageIcon icon = null;
+        try {
+            icon = new ImageIcon(Objects.requireNonNull(getClass().getResource(filename)));
+        } catch (Exception e) {
+            System.out.println("Icon cannot be found!");
+        }
+        assert icon != null;
         return icon.getImage();
     }
 }
