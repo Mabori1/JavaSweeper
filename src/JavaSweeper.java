@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Objects;
 import sweeper.Box;
+import sweeper.Coord;
 
 public class JavaSweeper extends JFrame {
 
@@ -28,12 +29,10 @@ public class JavaSweeper extends JFrame {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
 
-              // g.drawImage(getImage(Box.NUM5.name().toLowerCase()),0,0,this);
-                //g.drawImage(getImage("nobomb"),IMAGE_SIZE,0,this);
-
-                for (Box box : Box.values())
-                g.drawImage((Image)box.image,box.ordinal() * IMAGE_SIZE, 0,this);
-
+                for (Box box : Box.values()) {
+                    Coord coord = new Coord(box.ordinal() * IMAGE_SIZE, 0);
+                    g.drawImage((Image) box.image, coord.x, coord.y, this);
+                }
             }
         };
 
@@ -49,6 +48,7 @@ public class JavaSweeper extends JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         setVisible(true);
+        setIconImage(getImage("icon"));
     }
 
     private void setImages(){
