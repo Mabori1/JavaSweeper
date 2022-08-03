@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit. Begit mouse function">
+    <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit. Begin mouse function 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaSweeper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Flag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Flag.java" afterDir="false" />
@@ -70,7 +70,7 @@
       <updated>1659517834697</updated>
       <workItem from="1659517835879" duration="8698000" />
       <workItem from="1659536260164" duration="3191000" />
-      <workItem from="1659539620359" duration="19712000" />
+      <workItem from="1659539620359" duration="21651000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1">
       <created>1659519924120</created>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659559963341</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="commit. Begin mouse function 2">
+      <created>1659560738771</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1659560738771</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +207,8 @@
     <MESSAGE value="commit. Fulling anyway 3" />
     <MESSAGE value="commit. Add class Flag" />
     <MESSAGE value="commit. Begit mouse function" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit. Begit mouse function" />
+    <MESSAGE value="commit. Begin mouse function 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit. Begin mouse function 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
