@@ -6,11 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit. Add class Bomb">
+    <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit. Fulling anyway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaSweeper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Bomb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweeper/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Coord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Coord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Ranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Ranges.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
       <updated>1659517834697</updated>
       <workItem from="1659517835879" duration="8698000" />
       <workItem from="1659536260164" duration="3191000" />
-      <workItem from="1659539620359" duration="13021000" />
+      <workItem from="1659539620359" duration="14339000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1">
       <created>1659519924120</created>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659550361478</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit. Fulling anyway">
+      <created>1659554008134</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659554008134</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +167,8 @@
     <MESSAGE value="commit. Completion class Game" />
     <MESSAGE value="commit. Add class Matrix" />
     <MESSAGE value="commit. Add class Bomb" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit. Add class Bomb" />
+    <MESSAGE value="commit. Fulling anyway" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit. Fulling anyway" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
