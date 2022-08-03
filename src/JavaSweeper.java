@@ -13,6 +13,7 @@ public class JavaSweeper extends JFrame {
 
     private Game game;
     private JPanel panel;
+    private JLabel label;
     private final int COWS = 9;
     private final int ROWS = 9;
     private final int BOMBS = 10;
@@ -27,8 +28,14 @@ public class JavaSweeper extends JFrame {
         game = new Game(COWS, ROWS, BOMBS);
         game.start();
         setImages();
+        initLabel();
         initPanel();
         initframe();
+    }
+
+    private void initLabel() {
+        label = new JLabel(" Welcome!");
+        add(label, BorderLayout.SOUTH);
     }
 
     private void initPanel() {
@@ -57,8 +64,20 @@ public class JavaSweeper extends JFrame {
                     game.pressRightButton(coord);
                 if (e.getButton() == MouseEvent.BUTTON2)
                     game.start();
+                label.setText(getMessage());
 
                 panel.repaint();
+            }
+
+            private String getMessage() {
+                String str;
+                str = switch (game.getState()){
+                    case PLAYED ->  "Think twice!";
+                    case BOMBED -> "You lose!";
+                    case WINNER -> "Congranulation!";
+                };
+                return str;
+
             }
         });
         panel.setPreferredSize(new Dimension(
