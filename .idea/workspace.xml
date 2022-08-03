@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit 2 added icon">
-      <change afterPath="$PROJECT_DIR$/res/img/bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/bombed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/closed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/flaged.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/inform.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/nobomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/opened.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/zero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sweeper/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSweeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSweeper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaSweeper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +12,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Cq6b0PMUXNe9fvxL0VbJSHcUK4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,7 +38,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">
@@ -69,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659517834697</updated>
-      <workItem from="1659517835879" duration="3894000" />
+      <workItem from="1659517835879" duration="8698000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1">
       <created>1659519924120</created>
@@ -78,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659519924120</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit 2 added icon">
+      <created>1659521789726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659521789726</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +103,20 @@
     <MESSAGE value="commit 1" />
     <MESSAGE value="commit 2 added icon" />
     <option name="LAST_COMMIT_MESSAGE" value="commit 2 added icon" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/JavaSweeper.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
