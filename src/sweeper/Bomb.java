@@ -3,16 +3,16 @@ package sweeper;
 class Bomb {
 
     private Matrix bombMap;
-    private int totalBomb;
+    private int totalBombs;
 
     public Bomb(int totalBomb) {
-        this.totalBomb = totalBomb;
+        this.totalBombs = totalBomb;
         fixBombCount();
     }
 
     void start() {
         bombMap = new Matrix(Box.ZERO);
-        for (int i = 0; i < totalBomb; i++) {
+        for (int i = 0; i < totalBombs; i++) {
             placeBomb();
         }
 
@@ -31,8 +31,8 @@ class Bomb {
 
     private void fixBombCount() {
         int maxBomb = Ranges.getSize().x * Ranges.getSize().y / 2;
-        if (totalBomb > maxBomb)
-            totalBomb = maxBomb;
+        if (totalBombs > maxBomb)
+            totalBombs = maxBomb;
     }
 
     private void incNumbersAroundBomb(Coord coord) {
@@ -43,5 +43,9 @@ class Bomb {
 
     Box get(Coord coord) {
         return bombMap.get(coord);
+    }
+
+     int getTotalBombs() {
+        return totalBombs;
     }
 }

@@ -34,7 +34,9 @@ public class Game {
     }
 
     private void checkWinner(){
-
+        if (state == GameState.PLAYED)
+            if (flag.getCountOfClosedBoxes() == bomb.getTotalBombs())
+                state= GameState.WINNER;
     }
 
     private void openBox(Coord coord) {
