@@ -13,6 +13,7 @@ public class JavaSweeper extends JFrame {
     private JPanel panel;
     private final int COWS = 9;
     private final int ROWS = 9;
+    private final int BOMBS = 10;
     private final int IMAGE_SIZE = 50;
 
 
@@ -21,7 +22,7 @@ public class JavaSweeper extends JFrame {
     }
 
     private JavaSweeper() {
-        game = new Game(COWS,ROWS);
+        game = new Game(COWS, ROWS, BOMBS);
         game.start();
         setImages();
         initPanel();
@@ -34,7 +35,7 @@ public class JavaSweeper extends JFrame {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
 
-                for (Coord coord: Ranges.getAllCoords()) {
+                for (Coord coord : Ranges.getAllCoords()) {
 
                     g.drawImage((Image) game.getBox(coord).image,
                             coord.x * IMAGE_SIZE, coord.y * IMAGE_SIZE, this);
@@ -43,7 +44,7 @@ public class JavaSweeper extends JFrame {
         };
 
         panel.setPreferredSize(new Dimension(
-                Ranges.getSize().x * IMAGE_SIZE,
+                 Ranges.getSize().x * IMAGE_SIZE,
                 Ranges.getSize().y * IMAGE_SIZE));
         add(panel);
     }
