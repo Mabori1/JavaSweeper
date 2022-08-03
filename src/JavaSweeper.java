@@ -22,6 +22,7 @@ public class JavaSweeper extends JFrame {
 
     private JavaSweeper() {
         game = new Game(COWS,ROWS);
+        game.start();
         setImages();
         initPanel();
         initframe();
@@ -48,14 +49,13 @@ public class JavaSweeper extends JFrame {
     }
 
     private void initframe() {
-
-        pack();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Java Sweeper");
         setResizable(false);
-        setLocationRelativeTo(null);
         setVisible(true);
         setIconImage(getImage("icon"));
+        pack();
+        setLocationRelativeTo(null);
     }
 
     private void setImages() {
