@@ -21,4 +21,8 @@ public class Game {
             return bomb.get(coord);
         return flag.get(coord);
     }
+
+    public void pressLeftButton(Coord coord) {
+        flag.setOpenedToBox(coord);
+    }
 }
