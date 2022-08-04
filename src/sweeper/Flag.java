@@ -19,21 +19,47 @@ class Flag {
     }
 
     public void setFlagedToBox(Coord coord) {
-        flagMap.set(coord,Box.FLAGED);
+        flagMap.set(coord, Box.FLAGED);
     }
 
     protected void toggleFlagedToBox(Coord coord) {
-        switch (flagMap.get(coord)){
-            case FLAGED : setClosedToBox(coord); return;
-            case CLOSED : setFlagedToBox(coord);return;
+        switch (flagMap.get(coord)) {
+            case FLAGED:
+                setClosedToBox(coord);
+                return;
+            case CLOSED:
+                setFlagedToBox(coord);
+                return;
         }
     }
 
     private void setClosedToBox(Coord coord) {
-        flagMap.set(coord,Box.CLOSED);
+        flagMap.set(coord, Box.CLOSED);
     }
 
     int getCountOfClosedBoxes() {
         return countOfClosedBoxes;
+    }
+
+    void setBombedToBox(Coord coord) {
+        flagMap.set(coord, Box.BOMBED);
+    }
+
+    void setOpenedToClosedBox(Coord coord) {
+        if (flagMap.get(coord) == Box.CLOSED)
+            flagMap.set(coord, Box.OPENED);
+    }
+
+    void setNobombToFlagedSafeBox(Coord coord) {
+        if (flagMap.get(coord) == Box.FLAGED)
+            flagMap.set(coord, Box.NOBOMB);
+    }
+
+
+    protected int getCountOfFlagedBoxesAround(Coord coord) {
+        int count = 0;
+        for (Coord coord1 : Ranges.getCoordsAround(coord))
+            if (flagMap.get(coord) == Box.FLAGED) count++;
+        return count;
     }
 }

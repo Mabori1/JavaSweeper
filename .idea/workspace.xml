@@ -7,6 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit. Add enum GameState 3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Flag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Flag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,17 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="JavaSweeper" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaSweeper" />
@@ -67,7 +70,8 @@
       <updated>1659517834697</updated>
       <workItem from="1659517835879" duration="8698000" />
       <workItem from="1659536260164" duration="3191000" />
-      <workItem from="1659539620359" duration="25721000" />
+      <workItem from="1659539620359" duration="25736000" />
+      <workItem from="1659596300006" duration="6065000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1">
       <created>1659519924120</created>
@@ -195,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659566634114</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="commit. Add enum GameState 3">
+      <created>1659566789197</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1659566789197</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
