@@ -2,7 +2,7 @@ package sweeper;
 
 class Matrix {
 
-    private Box[][] matrix;
+    private final Box[][] matrix;
 
 
     public Matrix(Box defaultBox) {

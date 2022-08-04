@@ -24,12 +24,8 @@ class Flag {
 
     protected void toggleFlagedToBox(Coord coord) {
         switch (flagMap.get(coord)) {
-            case FLAGED:
-                setClosedToBox(coord);
-                return;
-            case CLOSED:
-                setFlagedToBox(coord);
-                return;
+            case FLAGED -> setClosedToBox(coord);
+            case CLOSED -> setFlagedToBox(coord);
         }
     }
 
@@ -55,11 +51,10 @@ class Flag {
             flagMap.set(coord, Box.NOBOMB);
     }
 
-
     protected int getCountOfFlagedBoxesAround(Coord coord) {
         int count = 0;
         for (Coord coord1 : Ranges.getCoordsAround(coord))
-            if (flagMap.get(coord) == Box.FLAGED) count++;
+            if (flagMap.get(coord1) == Box.FLAGED) count++;
         return count;
     }
 }

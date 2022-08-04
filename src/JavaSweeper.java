@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class JavaSweeper extends JFrame {
 
-    private Game game;
+    private final Game game;
     private JPanel panel;
     private JLabel label;
     private final int COWS = 9;

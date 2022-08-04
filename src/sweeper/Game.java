@@ -50,15 +50,9 @@ public class Game {
                 return;
             case CLOSED:
                 switch (bomb.get(coord)) {
-                    case ZERO -> {
-                        openBoxesAround(coord);
-                    }
-                    case BOMB -> {
-                        openBombs(coord);
-                    }
-                    default -> {
-                        flag.setOpenedToBox(coord);
-                    }
+                    case ZERO -> openBoxesAround(coord);
+                    case BOMB -> openBombs(coord);
+                    default -> flag.setOpenedToBox(coord);
                 }
 
         }
@@ -96,9 +90,6 @@ public class Game {
     }
 
     private boolean gameOver() {
-        if (state == GameState.PLAYED)
-            return false;
-
-        return true;
+        return state != GameState.PLAYED;
     }
 }

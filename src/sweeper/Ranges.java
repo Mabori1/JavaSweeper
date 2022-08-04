@@ -6,7 +6,7 @@ import java.util.Random;
 public class Ranges {
 
     private static Coord size;
-    private static Random random = new Random();
+    private static final Random random = new Random();
     private static ArrayList<Coord> allCoords;
 
     public static Coord getSize() {
@@ -15,7 +15,7 @@ public class Ranges {
 
     static void setSize(Coord _size) {
         size = _size;
-        allCoords = new ArrayList<Coord>();
+        allCoords = new ArrayList<>();
         for (int y = 0; y < size.y; y++)
             for (int x = 0; x < size.x; x++)
                 allCoords.add(new Coord(x, y));
@@ -37,7 +37,7 @@ public class Ranges {
 
     static ArrayList<Coord> getCoordsAround(Coord coord) {
         Coord around;
-        ArrayList<Coord> list = new ArrayList<Coord>();
+        ArrayList<Coord> list = new ArrayList<>();
         for (int x = coord.x - 1; x <= coord.x + 1; x++)
             for (int y = coord.y - 1; y <= coord.y + 1; y++)
                 if (inRange(around = new Coord(x,y)))

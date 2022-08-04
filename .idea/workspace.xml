@@ -6,11 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit. Add enum GameState 3">
+    <list default="true" id="c9c60bc5-88a3-4ea6-82aa-241959ef0efa" name="Changes" comment="commit. Finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweeper/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaSweeper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Flag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Flag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Ranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Ranges.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
       <workItem from="1659517835879" duration="8698000" />
       <workItem from="1659536260164" duration="3191000" />
       <workItem from="1659539620359" duration="25736000" />
-      <workItem from="1659596300006" duration="6065000" />
+      <workItem from="1659596300006" duration="7661000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1">
       <created>1659519924120</created>
@@ -206,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659566789197</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit. Finish">
+      <created>1659602729594</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659602729594</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +249,8 @@
     <MESSAGE value="commit. Add enum GameState" />
     <MESSAGE value="commit. Add enum GameState 2" />
     <MESSAGE value="commit. Add enum GameState 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit. Add enum GameState 3" />
+    <MESSAGE value="commit. Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit. Finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
